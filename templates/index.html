@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌤 Classic Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>🌤 Classic Weather Checker</h1>
+        <p>Check the weather anywhere in the world!</p>
+    </header>
+
+    <main>
+        <div class="form-card">
+            <form action="/weather" method="get">
+                <input type="text" name="city" placeholder="Enter a city 🌍" required />
+                <button type="submit">Get Weather</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Classic Weather App
+    </footer>
+</body>
+
+</html>
