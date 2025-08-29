@@ -23,22 +23,6 @@ If a city is not found, a custom **City Not Found** page with a retry option is 
 
 ---
 
-## 📂 Project Structure
-WeatherApp/
-│── server.py # Main Flask application
-|──weather.py  #weather function
-│── requirements.txt # Dependencies
-│── templates/ # HTML templates
-│ │── index.html # Main weather search page
-│ │── weather.html # Weather results page
-│ │── notfound.html # City not found page
-│── static/
-│ │── css/
-│ │ └── style.css # External CSS styles
-
-
----
-
 ## ⚙️ Installation 
 
  **Clone the repository**
