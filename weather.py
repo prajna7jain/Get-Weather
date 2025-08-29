@@ -7,10 +7,10 @@ import os
 load_dotenv()
 
 def get_current_weather(city="Kansas City"):
-    api_key = os.getenv("API_KEY")
+    api_key = os.getenv("api_key")
 
     if not api_key:
-        return {"error": "API key not found. Please set API_KEY in your .env file."}
+        return {"error": "API key not found. Please set api_key in your .env file."}
 
     request_url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
     response = requests.get(request_url)
